@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darshan Datrange — Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="container">
+      <a class="nav-logo" href="#">dd<span>.</span>dev</a>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <p class="hero-tag">// Full Stack Developer — Vadodara, India</p>
+        <h1>Hi, I'm<br><em>Darshan.</em><span class="cursor-blink"></span></h1>
+        <p class="hero-sub">A self-driven full stack developer passionate about building real products from scratch. Currently learning MERN stack and Flutter while working on my own startup idea.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">
+            See My Work
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-outline" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label reveal">// 01 — about me</p>
+      <div class="about-grid">
+        <div class="about-text reveal reveal-delay-1">
+          <h2>Builder. Learner. Problem Solver.</h2>
+          <p>I'm a full stack developer based in Vadodara, Gujarat. I started with the basics — HTML, CSS, PHP — and have been expanding my stack ever since. I enjoy building things that actually work and solve real problems.</p>
+          <p>Right now I'm deep into MERN stack development, exploring Flutter for mobile, and working on my own startup idea. I believe consistency beats talent — and I show up every day.</p>
+        </div>
+        <div class="about-stats reveal reveal-delay-2">
+          <div class="stat-cell">
+            <div class="stat-num" data-count="3">0</div>
+            <div class="stat-label">Real projects shipped</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num" data-count="6">0</div>
+            <div class="stat-label">Technologies in stack</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num">1</div>
+            <div class="stat-label">Startup in progress</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Hunger to keep building</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label reveal">// 02 — skills</p>
+      <div class="skills-section-grid">
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-category">Frontend</div>
+          <div class="skill-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag learning">React ↗</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-category">Backend</div>
+          <div class="skill-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">Java</span>
+            <span class="tag learning">Node.js ↗</span>
+            <span class="tag learning">Express ↗</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-category">Database</div>
+          <div class="skill-tags">
+            <span class="tag">MySQL</span>
+            <span class="tag learning">MongoDB ↗</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-4">
+          <div class="skill-category">Mobile & Design</div>
+          <div class="skill-tags">
+            <span class="tag learning">Flutter ↗</span>
+            <span class="tag">Swift</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Canva</span>
+          </div>
+        </div>
+        <div class="skill-card wide reveal">
+          <div class="skill-category">Currently Learning</div>
+          <div class="skill-tags">
+            <span class="tag learning">MERN Stack ↗</span>
+            <span class="tag learning">React ↗</span>
+            <span class="tag learning">MongoDB ↗</span>
+            <span class="tag learning">Flutter ↗</span>
+            <span class="tag learning">Advanced Web Dev ↗</span>
+          </div>
+          <p class="tag-note">↗ = actively learning / in progress</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label reveal">// 03 — projects</p>
+      <div class="projects-grid">
+
+        <a class="project-card featured reveal" href="https://github.com/Darshu503/NGO-Management-System" target="_blank" rel="noopener">
+          <div>
+            <p class="project-num">001 — Featured</p>
+            <h3>NGO Website</h3>
+            <p>A full-featured website built for a non-governmental organization with advanced PHP features — dynamic content management, form handling, and an admin dashboard. A real-world project built to solve a real need.</p>
+            <div class="skill-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-arrow">→</div>
+        </a>
+
+        <a class="project-card reveal reveal-delay-1" href="https://github.com/Darshu503/University-website" target="_blank" rel="noopener">
+          <p class="project-num">002</p>
+          <h3>University Website</h3>
+          <p>A complete university web portal with multiple pages, department sections, and dynamic data rendering — built to handle real institutional content.</p>
+          <div class="skill-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </a>
+
+        <a class="project-card reveal reveal-delay-2" href="https://github.com/Darshu503/Real-Time-Chat-Application" target="_blank" rel="noopener">
+          <p class="project-num">003</p>
+          <h3>Chat Application</h3>
+          <p>A real-time chat app built to learn and implement live messaging, user sessions, and WebSocket-style communication — learning by actually building.</p>
+          <div class="skill-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </a>
+
+        <div class="project-card reveal reveal-delay-3">
+          <span class="project-wip">Work in Progress</span>
+          <p class="project-num">004 — Startup</p>
+          <h3>Startup Project</h3>
+          <p>My own product — currently in development. Building it from scratch using the MERN stack. More details coming soon.</p>
+          <div class="skill-tags">
+            <span class="tag learning">React ↗</span>
+            <span class="tag learning">Node.js ↗</span>
+            <span class="tag learning">MongoDB ↗</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label reveal">// 04 — contact</p>
+      <div class="contact-wrap">
+        <div class="contact-left reveal reveal-delay-1">
+          <div class="avail-badge">
+            <div class="avail-dot"></div>
+            Open to opportunities
+          </div>
+          <h2>Let's build something together.</h2>
+          <p>I'm actively looking for full-time developer roles. If you're hiring or just want to talk tech, startups, or ideas — I'd love to connect.</p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:darshandatrange11@gmail.com">
+              <div class="link-icon">@</div>
+              darshandatrange11@gmail.com
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/darshan-datrange" target="_blank" rel="noopener">
+              <div class="link-icon">in</div>
+              linkedin.com/in/darshan-datrange
+            </a>
+            <a class="contact-link" href="https://github.com/Darshu503" target="_blank" rel="noopener">
+              <div class="link-icon">gh</div>
+              github.com/Darshu503
+            </a>
+            <a class="contact-link" href="https://wa.me/918905112286" target="_blank" rel="noopener">
+              <div class="link-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              +91 89051 12286 (WhatsApp)
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-2">
+          <input type="text" id="fname" placeholder="Your name" />
+          <input type="email" id="femail" placeholder="Your email" />
+          <textarea rows="5" id="fmessage" placeholder="Your message..."></textarea>
+          <button class="btn btn-primary" onclick="sendEmail()" style="align-self: flex-start;">
+            Send Message
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">Message sent! Darshan will get back to you soon.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Darshan Datrange — 2025</p>
+      <div class="footer-links">
+        <a href="https://github.com/Darshu503" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/darshan-datrange" target="_blank">LinkedIn</a>
+        <a href="mailto:darshandatrange11@gmail.com">Email</a>
+      </div>
+      <p>Built with passion from Vadodara</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
